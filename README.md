@@ -48,13 +48,13 @@ Ou executar o arquivo stop.sh:
 
 O fluxo dessa pipeline consiste em: 
 
-1 - Verificar se o link está disponível
-2 - Verificar se o arquivo está disponível
-3 - Realizar o download do arquivo
-4 - Salvar o arquivo em HDFS
-5 - Criar tabela em Hive
-6 - Popular a tabela com os dados do arquivo utilizando spark
-7 - Enviar notificação de e-mail 
+1. Verificar se o link está disponível
+2. Verificar se o arquivo está disponível
+3. Realizar o download do arquivo
+4. Salvar o arquivo em HDFS
+5. Criar tabela em Hive
+6. Popular a tabela com os dados do arquivo utilizando spark
+7. Enviar notificação de e-mail 
 
 Para enviar a notificação de e-mail o arquivo **mnt\airflow\airflow.cfg** precisa ser configurado: 
 
@@ -89,13 +89,17 @@ Os operators utilizados foram
 
 No diretório **docs** foi criado o arquivo **connections.txt** contendo todas as conexões que são necessárias. Essas conexões precisam ser informadas conforme imagem abaixo:
 
-img1 aqui
+<p align="center">
+    <img src="imgs/Screenshot_1.png" />
+</p>
 
 ## Fluxo da DAG
 
 O fluxo criado pode ser observado conforme figura abaixo: 
 
-img2 
+<p align="center">
+    <img src="imgs/Screenshot_2.png" />
+</p>
 
 ## Fonte
 
