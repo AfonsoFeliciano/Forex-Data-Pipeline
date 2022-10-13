@@ -1,0 +1,19 @@
+Conn ID: forex_api
+Conn Type: HTTP
+Host: https://gist.github.com/
+
+Conn ID: forex_path
+Conn Type: File (path)
+Extra: {"path":"/opt/airflow/dags/files"}
+
+Conn ID: hive_conn
+Conn Type: Hive Server 2 Thrift
+Host: hive-server
+Login: hive
+Senha: hive
+Porta: 10000
+
+Conn ID: spark_conn
+Conn Type: Spark
+Host: spark://spark-master
+Port: 7077
